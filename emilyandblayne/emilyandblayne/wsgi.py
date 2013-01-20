@@ -14,9 +14,14 @@ framework.
 
 """
 import os
+import sys
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emilyandblayne.settings")
+# add root directory to python path, because the wsgi process inherits the
+# PYTHONPATH environment variable from the parent process
+root = os.path.join(os.path.dirname(__file__), '..')
+sys.path.insert(0, root)
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
