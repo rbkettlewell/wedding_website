@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+{% block nav-our-registries %} <li><a class="active-link" href="{% url emilyandblayne.views.our_registries %}">our registries</a></li>{% endblock %}
+
+{% block nav-links %}
+{{ block.super }}
+{% endblock %}
+
+{% block body-content %}
+<div class="row-fluid">
+ <div class="row-fluid">
+    <a href="http://www.williams-sonoma.com/registry/find-registry.html"><img class="span10 offset1 space displayed" src="{{ STATIC_URL }}img/williams-sonoma.png" alt=""  /></a>
+  </div>
+  <div class="row-fluid">
+    <a href="http://www.crateandbarrel.com/Gift-Registry/">
+      <img class="span10 offset1 space displayed" src="{{ STATIC_URL }}img/crate.png" alt=""  />
+    </a>
+  </div>
+  <div class="row-fluid">
+    <a href="http://www.amazon.com/gp/wedding/homepage">
+      <img class="span10 offset1 space displayed" src="{{ STATIC_URL }}img/amazon.png" alt=""  />
+    </a>
+  </div>
+</div>
+{% endblock %}
+

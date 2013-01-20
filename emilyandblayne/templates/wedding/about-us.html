@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+
+{% block nav-about-us%}
+  <li style="margin-top: 20px;"> <a class="active-link" href="{% url emilyandblayne.views.about_us%}">about us</a></li>
+{% endblock %}
+
+{% block body-content %}
+  <div class="row-fluid">
+    <div class="row-fluid">
+    <h3 style="text-align: center;">Brief Bios</h3>
+    </div>
+    <div class="row-fluid">
+      <div class ="span10 offset1">
+        <p>Emily just finished her Bachelor of Architecture degree from the University of Texas at Austin in December 2012. She is now employed (phew!) with Sanders Architecture, a small firm in Austin. Since being out of school, she’s realized how great it is to finally have free time. She loves to curl up on the couch with Blayne and their kitty cat, Gibbs, and get into a good book. She can’t wait to get married and start a grown-up life with Blayne!!</p>
+    <div class="row-fluid" style="margin-bottom:10px;">
+      <img class="span8 offset2 displayed" src="{{ STATIC_URL }}img/line-break.png" alt=""  />
+    </div>
+      <p> Blayne finished his Bachelor of Biomedical Engineering at UT in May of 2011. Since then he has been working up a storm at National Instruments (despite all belief to the contrary, NI does not make calculators).
+      </p>
+      <p>During his time at NI, Blayne has worked with customers whose applications are pushing the boundaries of science. This is wonderful for him since he’s a true nerd at heart and loves to dream of the future. Lucky for him, he met a gal like Emily, who shares an immense curiosity towards the world, a love of art and travel, and is armed with a wit to always keep him on his toes! He looks forward to sharing a life filled with great love, happiness, and the mutual attainment of their life’s goals.
+      </p>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <h3 style="text-align: center;">A Crossing of Paths</h3>
+    </div>
+    <div class="row-fluid">
+      <div class = "span10 offset1">
+          <p>Emily and Blayne met at a bar. Yes, a bar. Not, however, without particular mutual rendezvous’ that allowed them to get fully acquainted. That very first night, Emily went out with her best friend, Sarah, to meet a few friends for a birthday party downtown. It just so happened that Blayne and his friends were downtown, too. Emily and Sarah ran into a group of people that they knew and started chatting (i.e. Blayne’s group). Blayne came up to Emily and they hit it off right away. Or so Emily thought. But before long, Emily was whisked away to meet some other people before Blayne could get her number. Emily figured that was that, and she’d never see him again.
+          </p>
+          <p>However, it wasn’t too much longer before almost the exact same thing happened! They were brought together again by their mutual friends. This time though, Blayne made a beeline for Emily as soon as he saw her walk in the door. They spent the rest of the night getting to know each other. The next afternoon, Blayne called Emily to ask her on a date. She said yes, and the rest is history!
+          </p>
+      </div>
+    </div>
+    <div class="row-fluid" style="margin-top:20px;">
+      <img class="span10 offset1 displayed" src="{{ STATIC_URL }}img/early-on.jpg" alt=""  />
+    </div>
+  </div>
+{% endblock %}
+

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+{% block nav-guest-info%} <li><a class="active-link" href="{% url emilyandblayne.views.guest_info %}">accommodations</a></li>{% endblock %}
+
+{% block nav-links %}
+{{ block.super }}
+{% endblock %}
+
+{% block body-content %}
+<div class="row-fluid">
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <h2>W Austin</h2>
+    </div>
+    <div class="row-fluid">
+      <div class="span7">
+        <img src="{{ STATIC_URL }}img/whotel.jpg" alt="" />
+      </div>
+      <div class="span5">
+        <p style="margin-top: 20px;">(512) 542-3600</p>
+        <p>200 Lavaca Street</p>
+        <p>Austin, TX 78701</p>
+        <br />
+        <a href="http://www.whotelaustin.com/">View Website</a>
+        <br />
+        <a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1210195991&key=19FAB">Reduced Rate Booking</a>
+        <br />
+        <a href="https://maps.google.com/maps?q=the+w+austin&fb=1&gl=us&hq=the+w+austin&cid=0,0,13364984326779123501&t=m&z=16">View Map</a>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <h2>Austin Hyde Park Inn</h2>
+    </div>
+    <div class="row-fluid">
+      <div class="span7">
+        <img src="{{ STATIC_URL }}img/hydepark.jpg" alt="" />
+      </div>
+      <div class="span5">
+        <p style="margin-top: 20px;">(512) 542-3600</p>
+        <p>4304 Avenue B</p>
+        <p>Austin, TX 78751</p>
+        <br />
+        <a href="http://austinhydeparkinn.com/">View Website</a>
+        <br />
+        <a href="https://maps.google.com/maps?q=Austin+Hyde+Park+Inn+4304+Avenue+B&fb=1&gl=us&hq=Austin+Hyde+Park+Inn+4304+Avenue+B&cid=0,0,16264013046034785908&t=m&z=16&iwloc=A">View Map</a>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <h2>Hampton Inn & Suites</h2>
+    </div>
+    <div class="row-fluid">
+      <div class="span7">
+        <img src="{{ STATIC_URL }}img/hampton.jpeg" alt="" />
+      </div>
+      <div class="span5">
+        <p style="margin-top: 20px;">(512) 472-1500</p>
+        <p>200 San Jacinto Blvd</p>
+        <p>Austin, TX 78701</p>
+        <br />
+        <a href="http://hamptoninn3.hilton.com/en/hotels/texas/hampton-inn-and-suites-austin-downtown-convention-center-AUSDTHX/index.html">View Website</a>
+        <br />
+        <a href="https://maps.google.com/maps?q=200+San+Jacinto+Blvd+Austin,+TX+78701&hnear=200+San+Jacinto+Blvd,+Austin,+Travis,+Texas+78701&gl=us&t=m&z=16">View Map</a>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <h2>W Austin</h2>
+    </div>
+    <div class="row-fluid">
+      <div class="span7">
+        <img src="{{ STATIC_URL }}img/sanjose.jpg" alt="" />
+      </div>
+      <div class="span5">
+        <p style="margin-top: 20px;">(512) 444-7322</p>
+        <p>1316 South Congress Avenue</p>
+        <p>Austin, Texas 78704</p>
+        <br />
+        <a href="http://www.sanjosehotel.com/">View Website</a>
+        <br />
+        <a href="https://maps.google.com/maps?q=1316+South+Congress+Avenue+Austin,+Texas+78704&hl=en&sll=30.263914,-97.741928&sspn=0.016476,0.017424&gl=us&hnear=1316+S+Congress+Ave,+Austin,+Travis,+Texas+78704&t=m&z=17">View Map</a>
+      </div>
+    </div>
+  </div> 
+</div>
+{% endblock %}

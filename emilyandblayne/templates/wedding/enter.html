@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+{% block main-content %}
+<div class="row-fluid" style="text-align: center; padding-top: 100px;">
+  <a href="{% url emilyandblayne.views.about_us %}" title="Click to Enter"><img class="std-border" src="{{ STATIC_URL }}img/enter.jpg" alt="" /></a>
+</div>
+{% endblock %}
+

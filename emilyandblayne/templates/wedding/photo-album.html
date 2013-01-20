@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+{% endblock %}
+
+{% block nav-photo-album%} <li><a class="active-link" href="{% url emilyandblayne.views.photo_album %}">photo album</a></li>{% endblock %}
+
+{% block nav-links %}
+{{ block.super }}
+{% endblock %}
+
+{% block body-content %}
+<div class="row-fluid">
+  <h2 class="offset4">Coming Soon</h2>
+</div>
+{% endblock %}
+

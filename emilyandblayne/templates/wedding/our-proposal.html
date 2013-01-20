@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ block.super }}
+{{ form.media }}
+<style type="text/css" media="all">
+  p{
+  margin-top: 15px;
+  }
+</style>
+{% endblock %}
+
+{% block nav-our-proposal%} <li><a class="active-link" href="{% url emilyandblayne.views.our_proposal %}">our proposal</a></li>{% endblock %}
+
+{% block nav-links %}
+{{ block.super }}
+{% endblock %}
+
+{% block body-content %}
+<div class="row-fluid">
+  <div class="span10 offset1">
+    <div class=row-fluid">
+      <p>Emily had been anxious for a little while about the next steps of her relationship with Blayne. So anxious, in fact, that she began to think that she had better prepare herself for waiting a pretty long time for a proposal. Everyone could tell how happy Blayne and Emily were, and inevitably people would ask Emily, “Do you think he’s going to propose?!” To which she would always replay, “It’s not if, it’s when—but I don’t think it’ll be for awhile!”</p>
+    </div>
+    <p>Emily first started growing suspicious of Blayne’s sudden, strange behavior on their drive to Houston to visit Emily’s parents last August. As they got closer to Houston, more and more perspiration began to accumulate on Blayne’s palms. Emily thought this to be very irregular. She thought, “Wow, I wonder why Blayne’s hands are so sweaty?!”</p>
+    <p>She decided to put it out of her mind after way too much thought about whether or not it meant something. She thought maybe it had something to do with a proposal, but didn’t want to get her hopes up. She decided that maybe Blayne’s nervousness might be a result of a plan to ask her parents’ permission for her hand in marriage. </p>
+    <p>The next morning, Blayne was planning to do the very thing that Emily had surmised. He woke up promptly at 8:30a.m. (sure that Emily was still fast asleep) to sneak out into the living room and have the conversation with her parents. But then the unthinkable happened. Emily was already up! He thought that this little snafu had ruined his whole plan until Emily’s dad asked him to go on a bike ride with him. </P>
+    <p>Emily’s dad and Blayne rode off into the park and at every break, Blayne tried to gather the courage to ask for Emily’s hand. After an hour had passed, Blayne had still said nothing. They were toward the end of their ride when they stopped at a bridge in the park for a water break. Finally, he explained his intentions to marry Emily and asked her dad if he could ask her. Emily’s dad responded enthusiastically, “I wish you would!!”</P>
+    <p>After they returned home, Blayne and Emily planned a trip to the Menil Collection, her favorite museum (and building) in town. They spent a great afternoon in the museum and outside exploring the neighborhood. Blayne thought that might be the right spot to propose, but decided to follow his original plan. </P>
+    <br />
+    <div class="row-fluid">
+      <img class="span12 displayed" src="{{ STATIC_URL }}img/menil.jpg" alt=""  />
+    </div>
+    <br />
+    <p>They had decided to go home, and Blayne offered to drive back. Emily thought this was a bit strange, considering that Blayne didn’t know his way back, but didn’t think much of it because she’ll take up any offer for someone else to drive the car. She started directing him back to the freeway, and after a few minutes they passed over the (yucky and brown) Brazos Bayou. All of a sudden he said, “Is that the bayou?” </p>
+      <p>“Yes…” Emily replied while furrowing her brow.</p>
+      <p>“Umm, I want to go to the bayou,” Blayne blurted out.</p>
+      <p>“Why? You just saw it. There’s nothing to see,” she said skeptically.</p>
+      <p>“I mean that place where they have the bayou,” he said cryptically.</p>
+      <p>“Bayou Bend?” Emily asked.</p>
+      <p>“Yeah! That’s it! Bayou Bend! I really want to go there,” Blayne insisted.</p>
+    <p>Emily had already decided at this point that something was going on. She wasn’t yet sure what it was, but she directed him to Bayou Bend anyway. 
+    </p>
+    <p>They arrived at Bayou Bend, a property that was originally built and owned by a prominent Houston family. It was a large piece of property nestled between the curves of Brazos Bayou that became a large garden of azaleas and camellias, dotted with statues and fountains, and crowned with a large colonial style house. Blayne knew this would be the perfect setting to propose to Emily.</p>
+    <br />
+    <div class="row-fluid">
+      <img class="span12 displayed" src="{{ STATIC_URL }}img/masion.jpg" alt=""  />
+    </div>
+    <br />
+
+    <p>Emily and Blayne walked hand in hand across the bridge to the house. Since it was almost closing time, there wasn’t a soul to be seen. Blayne stopped in front of the fountain that led directly to the house. It was there that he kissed Emily, put his hands on her waist, and started gushing about how much he loved her and how happy he was. Finally he got down on one knee, pulled a little blue box out of his pocket, and said, “Will you marry me?”</p>
+    <p>Can you guess what happened next??</p>
+    <p><b>SHE SAID YES!!!!</b></p>
+
+  </div>
+</div>
+{% endblock %}
+
