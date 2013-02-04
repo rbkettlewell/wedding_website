@@ -5,7 +5,6 @@ from emilyandblayne.views import enter, about_us, ceremony, guest_book, guest_in
 # from django.contrib import admin
 # admin.autodiscover()
 
-
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'emilyandblayne.views.home', name='home'),

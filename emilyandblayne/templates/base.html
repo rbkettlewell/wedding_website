@@ -97,7 +97,7 @@
       $(document).ready(function () {
         $('.carousel').carousel('cycle');
         var today = new Date().getTime();
-        var wedding = new Date(2013,05,25).getTime();
+        var wedding = new Date("May 25, 2013 16:30:00").getTime();
         var msPerDay = 86400000;
         var daysLeft = Math.round((wedding - today)/msPerDay);
         var daysStr = daysLeft.toString().concat(" days to go");
